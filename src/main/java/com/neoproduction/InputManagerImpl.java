@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Gets user input with via standard input/output streams
  */
 public class InputManagerImpl extends InputManager {
-    Scanner reader;
+    private Scanner reader;
     public InputManagerImpl() {
         reader = new Scanner(System.in);
     }
