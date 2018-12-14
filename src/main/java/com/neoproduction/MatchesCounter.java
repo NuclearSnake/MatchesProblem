@@ -1,5 +1,10 @@
 package com.neoproduction;
 
+/**
+ * Created by NuclearSnake 14.12.18 at 20:14
+ *
+ * Counts matches needed for building n squares 1x1 in 2D
+ */
 public class MatchesCounter {
     private int squaresRequired = -1;
     private int currentMatches = 0;
@@ -11,10 +16,17 @@ public class MatchesCounter {
         this.squaresRequired = squaresRequired;
     }
 
+    /**
+     * @param squaresRequired the value of squares in the problem
+     */
     public void setSquaresRequired(int squaresRequired) {
         this.squaresRequired = squaresRequired;
     }
 
+    /**
+     * Counts matches for the task
+     * @return number of matches
+     */
     public int countMatches(){
         if(squaresRequired < 2){
             if(squaresRequired == 1)
@@ -49,6 +61,10 @@ public class MatchesCounter {
         return currentMatches;
     }
 
+    /**
+     * Saves a bit of time understanding code that updates two values simultaneously
+     * @param numberOfMatches that form that next square
+     */
     private void addMatchesAndOneSquare(int numberOfMatches){
         currentMatches += numberOfMatches;
         currentSquares++;

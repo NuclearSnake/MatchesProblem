@@ -2,6 +2,16 @@ package com.neoproduction;
 
 import static com.neoproduction.MatchesProblem.ERROR;
 
+/**
+ * Created by NuclearSnake 14.12.18 at 19:56
+ *
+ * The main class, starts and manages the application. Using {@link MatchesProblem}, initializing it with
+ * instances of {@link InputManager} and {@link MatchesCounter}, gets the result of solving the simple math
+ * problem and prints it to the user
+ * 
+ * @see InputManager
+ * @see MatchesCounter
+ */
 public class Main {
     public static void main(String[] args){
         System.out.println("This is a matches counter app. You enter the number of squares 1x1 you want, the program " +
