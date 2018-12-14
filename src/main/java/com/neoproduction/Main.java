@@ -8,7 +8,7 @@ import static com.neoproduction.MatchesProblem.ERROR;
  * The main class, starts and manages the application. Using {@link MatchesProblem}, initializing it with
  * instances of {@link InputManager} and {@link MatchesCounter}, gets the result of solving the simple math
  * problem and prints it to the user
- * 
+ *
  * @see InputManager
  * @see MatchesCounter
  */
